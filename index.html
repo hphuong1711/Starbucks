@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Starbucks</title>
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        </head>
+    <body>
+        <div class="container">
+            <div class="circle"></div>
+            <header class="header">
+                <div class="navbar">
+                    <img src="./assets/img/logo (1).png" alt="" />
+
+                    <ul class="list">
+                        <li>
+                            <a href="#!">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#!">What's New</a>
+                        </li>
+                        <li>
+                            <a href="#!">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <div class="hero">
+                <div class="row-left">
+                    <h1>
+                        It's not just Coffee
+                        <br />
+                        It's <span>Starbucks</span>
+                    </h1>
+                    <p class="desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Harum ea aliquid temporibus et minus cumque nulla!
+                        Cumque, totam? Nobis id accusamus error, maxime magni ex
+                        in necessitatibus molestias laborum qui?
+                    </p>
+                    <button class="btn">LEARN MORE</button>
+                </div>
+
+                <div class="content-box">
+                    <img src="./assets/img/img1.png" alt="" class="starbucks" />
+                </div>
+            </div>
+            <ul class="thumb">
+                <li>
+                    <img
+                        src="./assets/img/thumb1.png"
+                        onclick="imgSlider('./assets/img/img1.png')"
+                        alt=""
+                    />
+                </li>
+                <li>
+                    <img
+                        src="./assets/img/thumb2.png"
+                        onclick="imgSlider('./assets/img/img2.png')"
+                        alt=""
+                    />
+                </li>
+                <li>
+                    <img
+                        src="./assets/img/thumb3.png"
+                        onclick="imgSlider('./assets/img/img3.png')"
+                        alt=""
+                    />
+                </li>
+            </ul>
+            <ul class="sci">
+                <li>
+                    <a href="#!"
+                        ><img src="./assets/img/facebook.png" alt=""
+                    /></a>
+                </li>
+                <li>
+                    <a href="#!"
+                        ><img src="./assets/img/twitter.png" alt=""
+                    /></a>
+                </li>
+                <li>
+                    <a href="#!"
+                        ><img src="./assets/img/instagram.png" alt=""
+                    /></a>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            function imgSlider(anything) {
+                document.querySelector(".starbucks").src = anything;
+            }
+        </script>   
+    </body>
+</html>
